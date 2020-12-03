@@ -1,0 +1,7 @@
+    
+{% for content in data %}
+<div class="my-2">
+    <a href="{% url 'upload:index' %}media/{{ content.document }}">{{ content.document }}</a>
+</div>
+{% endfor %}
+

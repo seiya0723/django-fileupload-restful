@@ -1,0 +1,7 @@
+
+
+{% for content in data %}
+<div class="my-2">
+    <img class="img-fluid" src="{% url 'upload:index' %}media/{{ content.photo }}" alt="投稿された画像">
+</div>
+{% endfor %}
